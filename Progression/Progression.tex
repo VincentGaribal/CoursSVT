@@ -1,5 +1,34 @@
-\documentclass{scrartcl}
+\documentclass[a4paper,landscape,8pt]{extreport}
+\usepackage{luatex85}
+\usepackage[margin=5mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{Source Sans Pro Light}
+\usepackage{tabularx}
+\usepackage[french]{babel}
+\usepackage{hyperref}
+\hypersetup{%
+  unicode=true%
+}
+
+\title{Progression commune de SVT : cycle 4}
+\author{Collège Elsa Triolet}
+\date{dernière mise à jour le \today}
 
 \begin{document}
-test
+\maketitle
+
+\phantomsection
+\addcontentsline{toc}{chapter}{Cinquième}
+\phantomsection
+\addcontentsline{toc}{section}{Thème 1 : la planète Terre, l'environnement et l'action humaine}
+\phantomsection
+\addcontentsline{toc}{subsection}{La Terre}
+
+\noindent
+\begin{tabularx}{\linewidth}{|*7{X|}}
+  \hline
+  test & test & test & test & test & test & test \\
+  \hline
+\end{tabularx}
+
 \end{document}
