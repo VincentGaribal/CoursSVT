@@ -2,9 +2,11 @@
 \usepackage{luatex85}
 \usepackage[margin=5mm]{geometry}
 \usepackage{fontspec}
-\setmainfont{Source Sans Pro Light}
+\setmainfont[BoldFont={Source Sans Pro Semi Bold}]{Source Sans Pro Light}
+\usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage[french]{babel}
+\usepackage{microtype}
 \usepackage{hyperref}
 \hypersetup{%
   unicode=true%
@@ -25,10 +27,16 @@
 \addcontentsline{toc}{subsection}{La Terre}
 
 \noindent
-\begin{tabularx}{\linewidth}{|*7{X|}}
-  \hline
-  test & test & test & test & test & test & test \\
-  \hline
+\begin{tabularx}{\linewidth}{p{3cm}p{3cm}cp{6cm}*3{X}}
+  \toprule
+  \textbf{Chapitre} & \textbf{Leçon} & \textbf{Durée} & \textbf{Idées clés} & \textbf{Connaissances} & \textbf{Compétences} & \textbf{Exemple d'activité} \\
+  \midrule
+  La Terre, une planète particulière & Le système solaire & 1h & Expliquer ce que la Terre a de spécifique et ce qu’elle partage avec différents objets du système solaire & Le système solaire, les planètes telluriques et les planètes gazeuses & & Approche historique \\
+  \cmidrule(l){2-7}
+                    & La Terre, une planète en mouvement & 1h & Expliquer le rôle majeur du Soleil sur certaines des caractéristiques des planètes telluriques et gazeuses & Le globe terrestre (forme, rotation) & & \\
+  \cmidrule(l){2-7}
+                    & La Terre, une planète active & 2h & & Le globe terrestre (séismes, éruptions volcaniques) & & \\
+  \midrule
 \end{tabularx}
 
 \end{document}
