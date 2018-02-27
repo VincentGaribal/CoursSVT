@@ -1,6 +1,4 @@
-\documentclass[8pt]{extarticle}
-
-\input{../Preambule/Preambule.tex}
+\documentclass{Programmation}
 
 \title{Programmation de SVT}
 \author{Collège Elsa Triolet}
@@ -11,14 +9,14 @@
 \newcommand{\Eres}{\cellcolor{eres}{\fontspec{Source Sans Pro Semi Bold}Ères géol.}}
 \newcommand{\MC}{\cellcolor{mc}{\fontspec{Source Sans Pro Semi Bold}\textcolor{white}{Mét. Clim.}}}
 \newcommand{\Risques}{\cellcolor{risque}{\fontspec{Source Sans Pro Semi Bold}Risques nat.}}
-\newcommand{\Ressources}{\cellcolor{ressources}{\fontspec{Source Sans Pro Semi Bold}Ressources}}
-\newcommand{\NutriVeg}{\cellcolor{nutveg}{\fontspec{Source Sans Pro Semi Bold}\textcolor{white}{Nutrit. Vég.}}}
-\newcommand{\NutriAni}{\cellcolor{nutani}{\fontspec{Source Sans Pro Semi Bold}\textcolor{white}{Nutrit. Anim.}}}
+\newcommand{\Ress}{\cellcolor{ressources}{\fontspec{Source Sans Pro Semi Bold}Ressources}}
+\newcommand{\NutVeg}{\cellcolor{nutveg}{\fontspec{Source Sans Pro Semi Bold}\textcolor{white}{Nutrit. Vég.}}}
+\newcommand{\NutAni}{\cellcolor{nutani}{\fontspec{Source Sans Pro Semi Bold}\textcolor{white}{Nutrit. Anim.}}}
 \newcommand{\Repro}{\cellcolor{repro}{\fontspec{Source Sans Pro Semi Bold}Reproduction}}
 \newcommand{\Genet}{\cellcolor{genet}{\fontspec{Source Sans Pro Semi Bold}Génétique}}
-\newcommand{\Evolution}{\cellcolor{evo}{\fontspec{Source Sans Pro Semi Bold}Évolution}}
-\newcommand{\Activites}{\cellcolor{activites}{\fontspec{Source Sans Pro Semi Bold}Activités...}}
-\newcommand{\Digestion}{\cellcolor{digestion}{\fontspec{Source Sans Pro Semi Bold}Digestion}}
+\newcommand{\Evo}{\cellcolor{evo}{\fontspec{Source Sans Pro Semi Bold}Évolution}}
+\newcommand{\Act}{\cellcolor{activites}{\fontspec{Source Sans Pro Semi Bold}Activités...}}
+\newcommand{\Dig}{\cellcolor{digestion}{\fontspec{Source Sans Pro Semi Bold}Digestion}}
 \newcommand{\Micro}{\cellcolor{micro}{\fontspec{Source Sans Pro Semi Bold}Micro-org.}}
 \newcommand{\Immuno}{\cellcolor{immuno}{\fontspec{Source Sans Pro Semi Bold}\textcolor{white}{Immuno.}}}
 \newcommand{\ReproHum}{\cellcolor{reprohum}{\fontspec{Source Sans Pro Semi Bold}Repro. Hum.}}
@@ -30,32 +28,29 @@
 \begin{center}
 
 \section*{Légende}
-\subsection*{Thème 1}
-\begin{tabularx}{.5\linewidth}{p{1.7cm}l}
-  \hline
+\begin{tabularx}{.32\linewidth}{p{1.7cm}l}
+  \multicolumn{2}{c}{\textbf{Thème 1}}\\ \hline
   \Terre & Terre\\ \hline
   \SVTG & Séismes, volcanisme, tectonique globale\\ \hline
   \Eres & Ères géologiques\\ \hline
   \MC & Météo et climat\\ \hline
   \Risques & Risques naturels\\ \hline
-  \Ressources & Exploitation des ressources naturelles\\ \hline
+  \Ress & Exploitation des ressources naturelles\\ \hline
 \end{tabularx}
-
-\subsection*{Thème 2}
-\begin{tabularx}{.5\linewidth}{p{1.7cm}l}
-  \hline
-  \NutriVeg & Nutrition végétale\\ \hline
-  \NutriAni & Nutrition animale\\ \hline
+\hfill
+\begin{tabularx}{.32\linewidth}{p{1.7cm}l}
+  \multicolumn{2}{c}{\textbf{Thème 2}}\\ \hline
+  \NutVeg & Nutrition végétale\\ \hline
+  \NutAni & Nutrition animale\\ \hline
   \Repro & Reproductions animale et végétale\\ \hline
   \Genet & Génétique\\ \hline
-  \Evolution & Évolution\\ \hline
+  \Evo & Évolution\\ \hline
 \end{tabularx}
-
-\subsection*{Thème 3}
-\begin{tabularx}{.5\linewidth}{p{1.7cm}l}
-  \hline
-  \Activites & Activités musculaire, nerveuse, cardiovasculaire et cérébrale\\ \hline
-  \Digestion & Digestion\\ \hline
+\hfill
+\begin{tabularx}{.32\linewidth}{p{1.7cm}l}
+  \multicolumn{2}{c}{\textbf{Thème 3}}\\ \hline
+  \Act & Activités musculaire, nerveuse, cardiovasculaire et cérébrale\\ \hline
+  \Dig & Digestion\\ \hline
   \Micro & Micro-organismes\\ \hline
   \Immuno & Immunologie\\ \hline
   \ReproHum & Reproduction humaine\\ \hline
@@ -64,7 +59,20 @@
 \section*{Programmation 2017-- 2018}
 \subsection*{Cinquième}
 \begin{tabular}{*{9}{p{1.7cm}}}
-  & & & & & & & & \\ \hline
+  \hline
+  \Terre&\MC    &\NutAni&\Micro& & & & & \\ \hline
+  \Terre&\Ress  &\NutAni&\Repro& & & & & \\ \hline
+  \SVTG &\Ress  &\NutAni&\Repro& & & & & \\ \hline
+  \SVTG &\Ress  &\NutAni&\Repro& & & & & \\ \hline
+  \MC   &\NutAni&\NutAni&\Evo  & & & & & \\ \hline
+\end{tabular}
+
+\subsection*{Quatrième}
+\begin{tabular}{*{9}{p{1.7cm}}}
+\end{tabular}
+
+\subsection*{Troisième}
+\begin{tabular}{*{9}{p{1.7cm}}}
 \end{tabular}
 \end{center}
 
