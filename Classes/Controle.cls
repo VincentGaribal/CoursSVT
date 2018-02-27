@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{controle}[2018/02/27 v1.]
+\ProvidesClass{Controle}[2018/02/27 v1.]
 \LoadClass{article}
 
 \RequirePackage[a4paper,margin=1cm,right=1.5cm]{geometry}
