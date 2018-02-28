@@ -1,10 +1,10 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{Programmation}[2018/02/27 v1]
-\LoadClass[8pt,landscape]{extarticle}
+\LoadClass[8pt]{extarticle}
 
 \usepackage{luatex85}
 \usepackage{geometry}
-\geometry{a4paper,margin=5mm}
+\geometry{a4paper,landscape,margin=5mm}
 \usepackage[french]{babel}
 \usepackage{fontspec}
 \setmainfont[BoldFont = {Source Sans Pro Semi Bold}]{Source Sans Pro Light}
