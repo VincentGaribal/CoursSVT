@@ -1,0 +1,81 @@
+\documentclass{Controle}
+\usepackage{multirow}
+
+\begin{document}
+
+\renewcommand{\correction}{non}
+
+\nom{}
+
+\exercice{Archaeopteryx}
+
+\emph{Archaeopteryx}, qui signifie «~aile antique~», est un genre de dinosaure à plumes disparu. Comme \emph{Sinocalliopteryx}, on considère \emph{Archeopteryx} comme un des ancêtres des oiseaux actuels. Comme eux, il possédait des plumes qu'il utilisait pour le vol et il avait un squelette interne. En revanche, il ne possédait pas de bec mais une bouche avec des dents.
+
+\question[]{Complétez le tableau de caractères suivant en mettant une croix lorsque le caractère est présent chez l'espèce.}{4}{%
+  \newline
+\begin{tabularx}{\linewidth}{|c|*{Y|}}
+  \hline
+  \multirow{2}{*}{\textbf{Caractère}} & \multicolumn{4}{c|}{\textbf{Espèce}}\\ \cline{2-5}
+& \emph{Archaeopteryx} & Renard & Canard colvert & Carabe violet \\ \hline
+Squelette interne & & & & \\ \hline
+Squelette externe & & & & \\ \hline
+Plume & & & & \\ \hline
+Poils & & & & \\ \hline
+\end{tabularx}
+}{%
+  \newline
+\begin{tabularx}{\linewidth}{|c|*4{Y|}}
+  \hline
+  \multirow{2}{*}{\textbf{Caractère}} & \multicolumn{4}{c|}{\textbf{Espèce}}\\ \cline{2-5}
+& \emph{Archaeopteryx} & Renard & Canard colvert & Carabe violet \\ \hline
+Squelette interne & & & & \\ \hline
+Squelette externe & & & & \\ \hline
+Plume & & & & \\ \hline
+Poils & & & & \\ \hline
+\end{tabularx}}
+
+\question[]{à partir du tableau de caractères de la question 1, complétez la classification en groupes emboîtés ci dessous en mettant les noms des groupes suivants :
+  \begin{itemize}
+  \item Mammifères (possèdent des poils);
+  \item Oiseaux (possèdent des plumes);
+  \item Vertébrés (possèdent un squelette interne);
+  \item Arthropodes (possèdent un squelette externe).
+  \end{itemize}
+  Attention, chaque boîte, quelle que soit sa taille, ne peut avoir qu'un seul nom.}{4}{%
+  \newline
+\begin{tikzpicture}
+  \draw (0,0) rectangle (18.5,5);
+  \draw (0.5,0.5) rectangle (12,4);
+  \draw (12.5,0.5) rectangle (18,4);
+  \draw (1,1) rectangle (5.75,3);
+  \draw (6.25,1) rectangle (11.5,3);
+\end{tikzpicture}}{%
+\newline
+\begin{tikzpicture}
+  \draw (0,0) rectangle (18.5,5);
+  \draw (0.5,0.5) rectangle (12,4);
+  \draw (12.5,0.5) rectangle (18,4);
+  \draw (1,1) rectangle (5.75,3);
+  \draw (6.25,1) rectangle (11.5,3);
+\end{tikzpicture}}
+
+\question[]{Positionnez les quatre espèces du tableau de caractère de la question 1 dans les boîtes correspondantes ci-dessus}{4}{}{}
+
+\question{La plus grande des boîtes rassemble toutes les espèces qui possèdent des cellules. Comment se nomme cette boîte ?}{1}{}{
+}
+
+\exercice{Histoire de la Terre et de la vie}
+\question{Reliez chacun des évènements suivants à la date correspondante.}{7}{}{%
+  \begin{center}
+    \begin{tabular}{lcp{5cm}cl}
+      L'espèce humaine & $\textbullet$ & & $\textbullet$ & 65 millions d'années\\
+      La formation de la Terre & $\textbullet$ & & $\textbullet$ & 4,56 milliards d'années\\
+      Les premières cellules & $\textbullet$ & & $\textbullet$ & 600 millions d'années\\
+      La disparition des dinosaures & $\textbullet$ & & $\textbullet$ & 1,4 milliards d'années\\
+      Les premières roches & $\textbullet$ & & $\textbullet$ & 3,5 milliards d'années\\
+      Les premiers animaux & $\textbullet$ & & $\textbullet$ & Moins de 1 million d'années\\
+      Les premières bactéries & $\textbullet$ & & $\textbullet$ & 4 milliards d'années\\
+    \end{tabular}
+  \end{center}
+}
+\end{document}
