@@ -2,7 +2,7 @@
 \ProvidesClass{Controle}[2018/02/27 v1.]
 \LoadClass{article}
 
-\RequirePackage[a4paper,margin=1cm,right=1.5cm]{geometry}
+\RequirePackage[a4paper,margin=0.5cm,right=1cm]{geometry}
 \RequirePackage[euenc]{fontspec}
 \setmainfont[Mapping=tex-text,ItalicFont={Source Sans Pro Italic},BoldFont={Source Sans Pro Semibold}]{Source Sans Pro Regular}
 \setsansfont[Mapping=tex-text]{Source Sans Pro Regular}
@@ -11,7 +11,7 @@
 \RequirePackage{graphicx}
 \RequirePackage[table]{xcolor}
 \RequirePackage{xifthen}
-\RequirePackage{tabu}
+\RequirePackage{tabularx}
 \RequirePackage{nopageno}
 \RequirePackage{setspace}
 \RequirePackage{totcount}
@@ -23,11 +23,11 @@
 \RequirePackage{caption}
 \sisetup{locale = FR,per-mode = symbol}
 
-%\tabulinesep=.4ex
-
 \ExplSyntaxOn
 \cs_new_eq:NN \Repeat \prg_replicate:nn
 \ExplSyntaxOff
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
 
 \newcommand{\ligne}[1]{\Repeat{#1}{\par\noindent\rule{\linewidth}{.4pt}}}
 
@@ -55,12 +55,6 @@
 \node[anchor = south west] at (0,1.2) {Classe :};
 \draw (2,0) -- (2,1.8cm);
 \node[anchor = south west] at (2.1,1.2) {Noms et prénoms des personnes du groupe :};
-%\draw (0,1.2) -- (.4\linewidth,1.2);
-%\node[anchor = south west] at (0,0.6) {Prénom :};
-%\draw (0,.6) -- (.4\linewidth,.6);
-%\node[anchor = south west] at (0,0) {Classe :};
-%\draw (.4\linewidth,0) -- (.4\linewidth,1.8cm);
-%\node[anchor = south west] at (.4\linewidth,1.2) {Observations :};
 \end{tikzpicture}}
 
 \newcounter{exercice}
@@ -72,6 +66,8 @@
 
 
 \newcommand{\rouge}[1]{\textcolor{red}{#1}}
+\newcommand{\correction}{}
+
 
 % 1 décalage
 % 2 question
@@ -80,27 +76,29 @@
 % 5 lignes
 \newcounter{question}
 \newtotcounter{points}
+
 \newcommand{\question}[5][\quad \hrulefill]{%
-\stepcounter{question}%
-\medskip%
-\noindent%
-\marginpar{/#3}%
-\addtocounter{points}{#3}%
-\textbf{\LARGE\thequestion}\ --- #2#1%
-\ifthenelse{\equal{\correction}{oui}}%
-{\\\rouge{#4}}%
-{#5}\smallskip}
+  \stepcounter{question}%
+  \bigskip%
+  \noindent%
+  \marginpar{/#3}%
+  \addtocounter{points}{#3}%
+  \textbf{Question \thequestion}\ --- #2#1%
+  \ifthenelse{\equal{\correction}{oui}}%
+  {\\\rouge{#4}}%
+  {\\#5\medskip}%
+}
+
 
 \newcommand{\bonus}[5][\quad \hrulefill]{%
-\medskip%
-\noindent%
-\marginpar{/#3}%
-\textbf{\LARGE Bonus}\ --- #2#1%
-\ifthenelse{\equal{\correction}{oui}}%
-{\\\rouge{#4}}%
-{#5}\smallskip}
-
-\newcommand{\correction}{}
+  \bigskip%
+  \noindent%
+  \marginpar{/#3}%
+  \textbf{Question Bonus}\ --- #2#1%
+  \ifthenelse{\equal{\correction}{oui}}%
+  {\\\rouge{#4}}%
+  {\\#5\medskip}%
+}
 
 \newcommand{\indicateurs}[1]{\noindent\begin{tikzpicture}\node [minimum width=\linewidth,draw] {«~#1~»};\end{tikzpicture}}
 
