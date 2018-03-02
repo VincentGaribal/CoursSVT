@@ -2,7 +2,7 @@
 \ProvidesClass{Controle}[2018/02/27 v1.]
 \LoadClass{article}
 
-\RequirePackage[a4paper,margin=1cm,right=1.5cm]{geometry}
+\RequirePackage[a4paper,margin=1cm,left=1.5cm]{geometry}
 \RequirePackage[euenc]{fontspec}
 \setmainfont[Mapping=tex-text,ItalicFont={Source Sans Pro Italic},BoldFont={Source Sans Pro Semibold}]{Source Sans Pro Regular}
 \setsansfont[Mapping=tex-text]{Source Sans Pro Regular}
@@ -20,6 +20,7 @@
 \RequirePackage{hhline}
 \RequirePackage{tikz}
 \RequirePackage{wrapfig}
+\RequirePackage{marginnote}
 \RequirePackage{caption}
 \sisetup{locale = FR,per-mode = symbol}
 
@@ -81,7 +82,7 @@
   \stepcounter{question}%
   \medskip%
   \noindent%
-  \marginpar{\quad/#3}%
+  \reversemarginpar\marginnote{/#3}%
   \addtocounter{points}{#3}%
   \textbf{Question \thequestion}\ --- #2#1%
   \ifthenelse{\equal{\correction}{oui}}%
@@ -93,7 +94,7 @@
 \newcommand{\bonus}[5][\quad \hrulefill]{%
   \medskip%
   \noindent%
-  \marginpar{\quad/#3}%
+  \reversemarginpar\marginnote{/#3}%
   \textbf{Question Bonus}\ --- #2#1%
   \ifthenelse{\equal{\correction}{oui}}%
   {\\\rouge{#4}}%
