@@ -1,27 +1,33 @@
 TEX=lualatex -interaction=nonstopmode -interaction=batchmode
-REPSOURCE=$(HOME)/CoursSVT
-REPPROGRESSION=$(REPSOURCE)/Progression
-REPPROGRAMMATION=$(REPSOURCE)/Programmation
-REPDROPBOX=$(HOME)/Dropbox/Enseignement/Année_courante
 
-all: Progression.pdf Programmation.pdf
+all: Progression Programmation
 
-Cours:
+.PHONY: Progression Programmation clean
 
-Progression.pdf: $(REPPROGRESSION)/Progression.tex
-	$(TEX) $?
-	$(TEX) $?
-	cp -f $(REPSOURCE)/$@ $(REPDROPBOX)/Progression/$@
+# Sixième
 
-Programmation.pdf: $(REPPROGRAMMATION)/Programmation.tex
-	$(TEX) $?
-	$(TEX) $?
-	cp -f $(REPSOURCE)/$@ $(REPDROPBOX)/Programmation/$@
+
+# Cinqième
+
+
+# Quatrième
+
+
+# Troisième
+
+
+Progression:
+	$(MAKE) -C Progression
+
+Programmation:
+	$(MAKE) -C Programmation
 
 clean:
 	find . -type f -name '*.aux' -delete
 	find . -type f -name '*.log' -delete
 	find . -type f -name '*.out' -delete
+	find . -type f -name '*.toc' -delete
 
 mrproper: clean
 	find . -type f -name '*.pdf' -delete
+	find . -type f -name '*.*~' -delete
