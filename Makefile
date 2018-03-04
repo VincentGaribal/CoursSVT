@@ -1,11 +1,17 @@
 TEX=lualatex -interaction=nonstopmode -interaction=batchmode
 
-all: Progression Programmation
+all:	CoursSixieme \
+	Progression \
+	Programmation
 
-.PHONY: Progression Programmation clean
+.PHONY:	CoursSixieme \
+	Progression \
+	Programmation \
+	clean
 
 # Sixième
-
+CoursSixieme:
+	$(MAKE) -C Cours/Sixieme
 
 # Cinqième
 
@@ -31,3 +37,4 @@ clean:
 mrproper: clean
 	find . -type f -name '*.pdf' -delete
 	find . -type f -name '*.*~' -delete
+	find . -type f -name '*~' -delete
