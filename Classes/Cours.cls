@@ -4,14 +4,14 @@
 
 \RequirePackage[margin=1cm]{geometry}
 \RequirePackage{fontspec}
-\setmainfont[Mapping=tex-text,ItalicFont={Source Sans Pro Italic},BoldFont={Source Sans Pro Semibold}]{Source Serif Pro Regular}
+\setmainfont[Mapping=tex-text]{Source Serif Pro Regular}
 \setsansfont[Mapping=tex-text]{Source Sans Pro Regular}
 \RequirePackage[frenchb]{babel}
 \RequirePackage[detect-all]{siunitx}
+\sisetup{locale = FR,per-mode = symbol}
 \RequirePackage{graphicx}
 \RequirePackage[table]{xcolor}
 \RequirePackage{tabularx}
 \RequirePackage{multirow}
 \RequirePackage{tikz}
 \RequirePackage{pdfpages}
-\sisetup{locale = FR,per-mode = symbol}
