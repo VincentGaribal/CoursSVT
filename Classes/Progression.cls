@@ -13,6 +13,7 @@
 \RequirePackage{colortbl}
 \RequirePackage{booktabs}
 \RequirePackage{tabularx}
+\RequirePackage{multirow}
 \RequirePackage{hyperref}
 \hypersetup{%
   unicode=true%
