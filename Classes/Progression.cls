@@ -1,19 +1,19 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{Progression}[2018/02/27 v1]
-\LoadClass[8pt,landscape]{extreport}
+\LoadClass[8pt]{extreport}
 
-\usepackage{luatex85}
-\usepackage{geometry}
-\geometry{a4paper,margin=5mm}
-\usepackage[french]{babel}
-\usepackage{fontspec}
+\RequirePackage{luatex85}
+\RequirePackage{geometry}
+\geometry{a4paper,landscape,margin=5mm}
+\RequirePackage[french]{babel}
+\RequirePackage{fontspec}
 \setmainfont[BoldFont = {Source Sans Pro Semi Bold}]{Source Sans Pro Light}
-\usepackage{microtype}
-\usepackage{xcolor}
-\usepackage{colortbl}
-\usepackage{booktabs}
-\usepackage{tabularx}
-\usepackage{hyperref}
+\RequirePackage{microtype}
+\RequirePackage{xcolor}
+\RequirePackage{colortbl}
+\RequirePackage{booktabs}
+\RequirePackage{tabularx}
+\RequirePackage{hyperref}
 \hypersetup{%
   unicode=true%
 }
