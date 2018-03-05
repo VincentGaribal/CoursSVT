@@ -1,10 +1,12 @@
 TEX=lualatex -interaction=nonstopmode -interaction=batchmode
 
 all:	CoursSixieme \
+	CoursCinquieme \
 	Progression \
 	Programmation
 
 .PHONY:	CoursSixieme \
+	CoursCinquieme \
 	Progression \
 	Programmation \
 	clean
@@ -14,6 +16,8 @@ CoursSixieme:
 	$(MAKE) -C Cours/Sixieme
 
 # Cinqième
+CoursCinquieme:
+	$(MAKE) -C Cours/Cinquieme
 
 
 # Quatrième
