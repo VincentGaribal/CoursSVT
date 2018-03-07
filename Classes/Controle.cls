@@ -86,8 +86,8 @@
   \addtocounter{points}{#3}%
   \textbf{Question \thequestion}\ --- #2#1%
   \ifthenelse{\equal{\correction}{oui}}%
-  {\\\rouge{#4}}%
-  {\\#5}%
+  {\rouge{#4}}%
+  {#5}%
 }
 
 
@@ -97,8 +97,8 @@
   \reversemarginpar\marginnote{/#3}%
   \textbf{Question Bonus}\ --- #2#1%
   \ifthenelse{\equal{\correction}{oui}}%
-  {\\\rouge{#4}}%
-  {\\#5}%
+  {\rouge{#4}}%
+  {#5}%
 }
 
 \newcommand{\indicateurs}[1]{\noindent\begin{tikzpicture}\node [minimum width=\linewidth,draw] {«~#1~»};\end{tikzpicture}}
